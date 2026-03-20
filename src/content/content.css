@@ -1,0 +1,30 @@
+/* Content script styles */
+
+/* Override any conflicting page styles */
+#adhyayan-extension-root * {
+  box-sizing: border-box;
+}
+
+/* Ensure proper z-index stacking */
+.adhyayan-overlay {
+  z-index: 2147483647 !important;
+}
+
+/* Smooth animations */
+.adhyayan-fade-in {
+  animation: adhyayan-fadeIn 0.2s ease-in-out;
+}
+
+@keyframes adhyayan-fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Selection tool cursor */
+.adhyayan-selection-active {
+  cursor: crosshair !important;
+}
